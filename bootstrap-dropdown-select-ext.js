@@ -48,7 +48,7 @@
     var select = function(e) {
 
         //only accept enter when event is keydown
-        if (event.type === 'keydown' && !/13/.test(e.which)) return;
+        if (e.type === 'keydown' && !/13/.test(e.which)) return;
 
         var $this = $(this);
 
