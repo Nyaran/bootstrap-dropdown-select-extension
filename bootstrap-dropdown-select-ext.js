@@ -5,6 +5,7 @@
  * 
  * @author anh.trinh
  * @website: http://trinhtrunganh.com
+ * @author Nyaran
  *
  * @ussage
  *  - Add 'data-select="true"' to .dropdown-menu
@@ -70,15 +71,14 @@
         /**
          * Where the hacks begin
          */
-        
-        var $selected = $items.eq(index);
+        var $selected = $items.eq(index).parent('li'),
             selectedText = $items.eq(index).text();
-
+		
         //previous selected
         var $previousSelect = $this.find('.selected');
 
         if (!$selected.hasClass('selected')) {
-            $selected.parent('li').addClass('selected');
+            $selected.addClass('selected');
             $parent.find('.btn').first().text(selectedText);
 
             $previousSelect.removeClass('selected');
