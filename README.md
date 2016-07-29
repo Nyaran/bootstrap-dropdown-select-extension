@@ -18,7 +18,8 @@ Please refer to this article on [My Blog](http://trinhtrunganh.com/extends-twitt
 
 Example
 =======
-  ```html Dropdown with separated buttons
+ Dropdown with separated buttons
+  ```html
     <div class="btn-group dropup">
       <button type="button" class="btn btn-default">Where value should be updated</button>
       <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
@@ -30,8 +31,9 @@ Example
       </ul>
     </div>
   ```
-  
-  ```html Dropdown with single button
+ 
+ Dropdown with single button
+  ```html
     <div class="btn-group dropup">
       <button type="button" class="btn btn-default">
         <span class="selected-container">Where value should be updated</span>
