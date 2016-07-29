@@ -67,6 +67,7 @@
         if (!$items.length) return;
 
         var index = $items.index(e.target);
+        var textContainer = $this.data('select-text');
 
         /**
          * Where the hacks begin
@@ -79,7 +80,10 @@
 
         if (!$selected.hasClass('selected')) {
             $selected.addClass('selected');
-            $parent.find('.btn').first().text(selectedText);
+            if (textContainer)
+            	$parent.find('.btn ' + textContainer).text(selectedText);
+            else
+            	$parent.find('.btn').first().text(selectedText);
 
             $previousSelect.removeClass('selected');
         }
